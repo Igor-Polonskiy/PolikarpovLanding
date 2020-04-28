@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+header{
+    background-color: #252525;
+    color: white;
+    font-size: 20px;
+    height: 100vh;
+    background-image: url(../img/man-4941041_1920.jpg);
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.heder_content{
+    margin: auto auto;
+}
+.header_title{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0 0  3px black;
+}
+.header__txt {
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 0 1px 5px black;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.join{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: aqua;
+    color: #252525 ;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.about{
+    padding: 20px 0;
+}
+.about__title{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about__list_item {
+    padding: 10px 0;
+}
+.about__list_item::before {
+ content: '';
+ height: 10px;
+ width: 10px;
+ border-radius: 50%;
+ background-color: darkred;
+ margin-left: 5px;
+ margin-right: 10px;
+ display: inline-block;
+}
+.subtitle {
+    margin: 10px 0;
+}
+.whatis{
+    background-color: #252525;
+    color: white;
+}
+.whatis__item {
+    margin: 10px 0;
+} 
+.whatis__item span{
+    color: aqua;
+    margin-right: 10px;
+}
+.howis_subtitle{
+    text-align: center;
+    font-size: 18px;
+}
