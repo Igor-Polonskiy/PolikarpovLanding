@@ -51,12 +51,13 @@ header {
     height: 10vh;
 }
 .join{
+    transform: rotate(-15deg);
     background-color: lightseagreen;;
-   height: 120px;
-   width: 120px;
-    
+    height: 120px;
+    width: 120px;
     font-size: 18px;
-    color: white;
+    font-weight: 700;
+    color: rgb(199, 34, 89);
     border-radius: 50%;
     border: 1px solid #4b0707;
     outline: none;
