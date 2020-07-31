@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #1d1d1d;
-    color: white;
+    color: lightseagreen;;
     font-size: 20px;
     height: 100vh;
 
@@ -51,7 +51,7 @@ header {
     height: 10vh;
 }
 .join{
-    background-color: rgb(51, 11, 66);
+    background-color: lightseagreen;;
    height: 120px;
    width: 120px;
     
@@ -61,4 +61,33 @@ header {
     border: 1px solid #4b0707;
     outline: none;
     cursor: pointer;
+}
+section {
+    box-sizing: border-box;
+    padding: 20px;
+}
+.about__title{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.whatis span{
+    color: red;
+}
+.about__list{
+    list-style: none;
+    padding-left: 15px;
+}
+.about__list li{
+    display: flex;
+    margin: 10px 0;
+}
+.about__list i{
+    box-sizing: border-box;
+    width: 20px;
+    padding-right: 35px;
+    color:lightseagreen;
+}
+.about__list span{
+   
 }
