@@ -12,7 +12,9 @@ header {
 
    
 }
-
+.flex{
+    display: flex;
+}
 .header_container {
     align-items: center;
 }
@@ -89,6 +91,16 @@ section {
     padding-right: 35px;
     color:lightseagreen;
 }
-.about__list span{
+.result_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    max-height: 320px;
+    overflow: hidden;
+}
+.result_img img{
+   width: 100%;
+   max-width: 240px;
    
 }
