@@ -1,6 +1,3 @@
-*{
-    --yelow_color: rgb(236, 222, 19);
-}
 body {
     padding: 0;
     margin: 0;
@@ -9,7 +6,7 @@ body {
 
 header {
     background-color: #1d1d1d;
-    color: var(--yelow_color);
+    color: lightseagreen;;
     font-size: 20px;
     height: 100vh;
 
@@ -57,28 +54,17 @@ header {
 }
 .join{
     transform: rotate(-15deg);
-    background-color: var(--yelow_color);
+    background-color: lightseagreen;;
     height: 120px;
     width: 120px;
     font-size: 18px;
     font-weight: 700;
-    color: black;
+    color: rgb(199, 34, 89);
     border-radius: 50%;
-    border: none;
+    border: 1px solid #4b0707;
     outline: none;
     cursor: pointer;
-    animation: radial-pulse 1s infinite;
 }
-
-@keyframes radial-pulse {
-    0% {
-      box-shadow: 0 0 0 0px rgba(167, 190, 35, 0.5);
-    }
-   
-    100% {
-      box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
-    }
-  }
 section {
     box-sizing: border-box;
     padding: 20px;
@@ -103,7 +89,7 @@ section {
     box-sizing: border-box;
     width: 20px;
     padding-right: 35px;
-    color:var(--yelow_color);
+    color:lightseagreen;
 }
 .result_img{
     display: flex;
