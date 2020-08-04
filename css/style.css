@@ -110,14 +110,8 @@ section {
     justify-content: center;
     align-items: center;
     width: 47%;
-    height: 250px;
+    max-height: 320px;
     overflow: hidden;
-}
-.result_person{
-    margin-bottom: 15px;
-}
-.result_img_title{
-    height: 30px;
 }
 .result_img img{
    width: 100%;
