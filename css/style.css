@@ -88,8 +88,19 @@ section {
     text-align: center;
     padding: 10px;
 }
+.whatis{
+    background-color: #1d1d1d;
+    color: var(--yelow_color);
+}
 .whatis span{
+    display: block;
     color: red;
+    margin-right: 10px;
+}
+.whatis__item{
+    display: flex;
+    margin-bottom: 10px;
+    
 }
 .about__list{
     list-style: none;
