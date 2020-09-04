@@ -221,3 +221,17 @@ section {
 .active {
     background-color: var(--yelow_color);
 }
+
+footer {
+    padding: 20px 0;
+    background: #1d1d1d;
+}
+
+footer a {
+    color: var(--yelow_color);
+}
+
+.footer_icons {
+    justify-content: space-around;
+    font-size: 40px;
+}

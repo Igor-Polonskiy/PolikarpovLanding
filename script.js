@@ -3,10 +3,21 @@ let dots = document.querySelectorAll('.dot')
 // create a simple instance
 // by default, it only adds horizontal recognizers
 let mc = new Hammer(slider);
-let translate = 0
+let translate = 0;
+let whidth = slider.clientWidth;
+
+
+dots.forEach((element, index) => {
+    function slide() {
+        translate = -index*whidth;
+        slider.style.transform = `translateX(${translate}px)`;
+        dotsColoring();
+    }
+    element.addEventListener("click", slide);
+})
+
 // listen to events...
 mc.on("swipeleft swiperight", function (ev) {
-    let whidth = slider.clientWidth
     if (ev.type == 'swipeleft') {
         translate -= whidth;
     } else translate += whidth;
@@ -17,6 +28,10 @@ mc.on("swipeleft swiperight", function (ev) {
         translate = -3 * whidth
     }
     slider.style.transform = `translateX(${translate}px)`;
+    dotsColoring();
+});
+
+function dotsColoring() {
     switch (translate) {
         case -3 * whidth:
             dots.forEach((dot) => {
@@ -46,4 +61,5 @@ mc.on("swipeleft swiperight", function (ev) {
             dots[0].classList.add('active');
             break
     }
-});
+}
+
