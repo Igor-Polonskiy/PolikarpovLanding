@@ -1,5 +1,8 @@
 let slider = document.querySelector('.slider');
-let dots = document.querySelectorAll('.dot')
+let dots = document.querySelectorAll('.dot');
+let join = document.querySelectorAll('.join');
+let popup = document.querySelector('.connect');
+let removepopup = document.querySelector('.close');
 // create a simple instance
 // by default, it only adds horizontal recognizers
 let mc = new Hammer(slider);
@@ -9,15 +12,25 @@ let whidth = slider.clientWidth;
 
 dots.forEach((element, index) => {
     function slide() {
-        translate = -index*whidth;
+        translate = -index * whidth;
         slider.style.transform = `translateX(${translate}px)`;
         dotsColoring();
     }
     element.addEventListener("click", slide);
 })
 
+removepopup.onclick = function() {
+    popup.classList.add('nodisplay');
+}
+
+join.forEach((elem) => {
+    elem.onclick = function() {
+        popup.classList.remove('nodisplay');
+    };;
+})
+
 // listen to events...
-mc.on("swipeleft swiperight", function (ev) {
+mc.on("swipeleft swiperight", function(ev) {
     if (ev.type == 'swipeleft') {
         translate -= whidth;
     } else translate += whidth;
@@ -40,14 +53,14 @@ function dotsColoring() {
             dots[3].classList.add('active');
             break
 
-        case -2 * whidth:  // if (x === 'value2')
+        case -2 * whidth: // if (x === 'value2')
             dots.forEach((dot) => {
                 dot.classList.remove('active');
             })
             dots[2].classList.add('active');
             break
 
-        case -1 * whidth:  // if (x === 'value2')
+        case -1 * whidth: // if (x === 'value2')
             dots.forEach((dot) => {
                 dot.classList.remove('active');
             })
@@ -62,4 +75,3 @@ function dotsColoring() {
             break
     }
 }
-
