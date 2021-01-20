@@ -156,6 +156,17 @@ section {
 
 .result_person {
     width: 100%;
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 20px);
+    color: var(--yelow_color);
+    font-size: 16px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px black, 0 0 1em #1d1d1d;
 }
 
 .result_img_1 {
